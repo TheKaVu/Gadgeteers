@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &843880323555844072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555380361907206460}
+  - component: {fileID: 686740252207497866}
+  - component: {fileID: 3886320879955769040}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1555380361907206460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843880323555844072}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalScale: {x: 3, y: 0, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1870005245870460597}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686740252207497866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843880323555844072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7182387460f4d3785b53c0f98082ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 3886320879955769040}
+  _marker: {fileID: 2683076092991131619}
+--- !u!64 &3886320879955769040
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843880323555844072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3936503092823055475, guid: b908100400d667e478f0b91953be3064, type: 3}
+--- !u!1 &4301658887287869800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4075980576041912566}
+  - component: {fileID: 2683076092991131619}
+  m_Layer: 0
+  m_Name: Marker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4075980576041912566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301658887287869800}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1870005245870460597}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!212 &2683076092991131619
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301658887287869800}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cc0c9609a2af1b14faf78f6b13018eff, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &4365405984552994129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870005245870460597}
+  - component: {fileID: 2086564991638484684}
+  - component: {fileID: 191548679186988548}
+  - component: {fileID: 1003710887236010638}
+  m_Layer: 0
+  m_Name: Crushers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1870005245870460597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4365405984552994129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1555380361907206460}
+  - {fileID: 4075980576041912566}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086564991638484684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4365405984552994129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa56173cc427a544b3c34bd1e9911ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats:
+  - rid: 9082344588340625668
+  - rid: 9082344682697523285
+  - rid: 9082344682697523286
+  - rid: 7904369568189776072
+  - rid: 9082344975877275728
+  references:
+    version: 2
+    RefIds:
+    - rid: 7904369568189776072
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: duration.stun
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 0.2
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies:
+        - _target:
+            _value: strength
+          _factor: 0.06
+        - _target:
+            _value: power
+          _factor: 0.08
+    - rid: 9082344588340625668
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: cooldown
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 5
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344682697523285
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: energy_cost
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 65
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344682697523286
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: power
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 0
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344975877275728
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: damage.hit
+        _flags:
+          _value: 72
+          _enabled: 1
+        _baseValue: 2
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies:
+        - _target:
+            _value: strength
+          _factor: 0.5
+        - _target:
+            _value: power
+          _factor: 0.75
+--- !u!114 &191548679186988548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4365405984552994129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201bbe05cdcb4320a8f78861555c7283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Crushers
+  _abilityName: Heavy Step
+  _description: Stomp on ground causing minor earthquake of 3m range, which {stuns}
+    all enemies in its area for {@duration.stun} and deals {@damage.hit} to each.
+  _sprite: {fileID: 0}
+  _passiveModifiers:
+  - _operation: 0
+    _arg: 2
+    _target:
+      _value: move_speed
+    _flagFilter: 0
+  _hitbox: {fileID: 686740252207497866}
+--- !u!114 &1003710887236010638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4365405984552994129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00400962d7be4936976d74c50d897dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _size: 3

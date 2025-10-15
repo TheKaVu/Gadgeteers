@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1159167638133945053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3252814090751661311}
+  - component: {fileID: 2991719356400408408}
+  - component: {fileID: 428087451618711868}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3252814090751661311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159167638133945053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 5.5}
+  m_LocalScale: {x: 1, y: 0, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7704242149173638691}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2991719356400408408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159167638133945053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7182387460f4d3785b53c0f98082ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 428087451618711868}
+  _marker: {fileID: 6131160347737407985}
+--- !u!65 &428087451618711868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159167638133945053}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2002960312253840048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7704242149173638691}
+  - component: {fileID: 7416755919666983981}
+  - component: {fileID: 2628466643542825413}
+  - component: {fileID: 3956354354479307121}
+  m_Layer: 0
+  m_Name: Loyal Spear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7704242149173638691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002960312253840048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3252814090751661311}
+  - {fileID: 1015078131367009379}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7416755919666983981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002960312253840048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa56173cc427a544b3c34bd1e9911ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats:
+  - rid: 9082344628512882783
+  - rid: 9082344682697523280
+  - rid: 9082344682697523281
+  - rid: 7904369568189776078
+  - rid: 7904369568189776079
+  references:
+    version: 2
+    RefIds:
+    - rid: 7904369568189776078
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: damage.hit
+        _flags:
+          _value: 4
+          _enabled: 1
+        _baseValue: 2
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies:
+        - _target:
+            _value: strength
+          _factor: 0.9
+        - _target:
+            _value: accuracy
+          _factor: 0.6
+    - rid: 7904369568189776079
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: damage.retract
+        _flags:
+          _value: 128
+          _enabled: 1
+        _baseValue: 7
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344628512882783
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: cooldown
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 5
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344682697523280
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: energy_cost
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 50
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344682697523281
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: power
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 0
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+--- !u!114 &2628466643542825413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002960312253840048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94efaa3ddcb748499c17ce023ef77ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Loyal Spear
+  _abilityName: Piercing Shot
+  _description: Throw a spear towards an enemy. If hit, deal {@damage.hit}. Spear
+    gets stuck in a target location or in the enemy, and can be retracted by recasting
+    ability. If retracted from an enemy, deal {@damage.retract} to this enemy.
+  _sprite: {fileID: 0}
+  _passiveModifiers: []
+  _hitbox: {fileID: 2991719356400408408}
+  _projectile: {fileID: 2009965025533947979, guid: a2d49b819560dfb4a832a7dec4fce94d,
+    type: 3}
+--- !u!114 &3956354354479307121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002960312253840048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00400962d7be4936976d74c50d897dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _size: 3
+--- !u!1 &7458982792191908610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015078131367009379}
+  - component: {fileID: 6131160347737407985}
+  m_Layer: 0
+  m_Name: Marker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1015078131367009379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458982792191908610}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.05, z: 5.5}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7704242149173638691}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!212 &6131160347737407985
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458982792191908610}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3a4bb4d174fc6c94e9cc3b30744b1e5f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 1
+  m_Size: {x: 1, y: 10}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

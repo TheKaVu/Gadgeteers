@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4273181157787314284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055843216873951262}
+  - component: {fileID: 1749299989568296254}
+  - component: {fileID: 3863842087768698533}
+  - component: {fileID: 5261457164598299128}
+  m_Layer: 0
+  m_Name: Wardens Jacket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1055843216873951262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273181157787314284}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 599.48267, y: 518.0985, z: -1.0155513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749299989568296254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273181157787314284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa56173cc427a544b3c34bd1e9911ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats:
+  - rid: 9082344588340625714
+  - rid: 9082344682697523283
+  - rid: 9082344682697523284
+  - rid: 7904369626985005287
+  - rid: 7904369562659848275
+  references:
+    version: 2
+    RefIds:
+    - rid: 7904369562659848275
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: sustain.max_bonus
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 0
+        _isDynamic: 0
+        _ignoreModifiers: 1
+        _dependencies:
+        - _target:
+            _value: max_health
+          _factor: 0.1
+    - rid: 7904369626985005287
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: duration
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 5
+        _isDynamic: 0
+        _ignoreModifiers: 1
+        _dependencies: []
+    - rid: 9082344588340625714
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: cooldown
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 10
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344682697523283
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: energy_cost
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 60
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+    - rid: 9082344682697523284
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: power
+        _flags:
+          _value: 0
+          _enabled: 0
+        _baseValue: 0
+        _isDynamic: 0
+        _ignoreModifiers: 0
+        _dependencies: []
+--- !u!114 &3863842087768698533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273181157787314284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29147f672f3a491a8d91d4d300583d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Warden's Jacket
+  _abilityName: Unbreakable
+  _description: Cover yourself for {@duration} with thick adaptive layer that transforms
+    {20%} of sustained damage into bonus {#sustain} up to {@sustain.max_bonus}.
+  _sprite: {fileID: 0}
+  _passiveModifiers:
+  - _operation: 0
+    _arg: 10
+    _target:
+      _value: sustain
+    _flagFilter: 0
+  - _operation: 1
+    _arg: 0.5
+    _target:
+      _value: max_health
+    _flagFilter: 0
+  _usageDelay: 0
+--- !u!114 &5261457164598299128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273181157787314284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00400962d7be4936976d74c50d897dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _size: 3

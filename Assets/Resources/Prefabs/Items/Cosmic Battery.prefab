@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2404395201520979710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2642675674977766326}
+  - component: {fileID: 1087174315680365669}
+  - component: {fileID: 7980099922450769091}
+  m_Layer: 0
+  m_Name: Cosmic Battery
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2642675674977766326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404395201520979710}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4241935, y: -2.2006142, z: 3.2412305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087174315680365669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404395201520979710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa56173cc427a544b3c34bd1e9911ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats:
+  - rid: 367501909149614160
+  references:
+    version: 2
+    RefIds:
+    - rid: 367501909149614160
+      type: {class: FlatStat, ns: Source.Gadgeteers.Game, asm: Assembly-CSharp}
+      data:
+        _key:
+          _value: power.bonus
+        _flags: 0
+        _baseValue: 0
+        _isDynamic: 0
+        _ignoreModifiers: 1
+        _dependencies:
+        - _target:
+            _value: energy
+          _factor: 0.03
+--- !u!114 &7980099922450769091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404395201520979710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66ce1488a1e48da8f93f0666908ab9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Cosmic Battery
+  _abilityName: Full Potential
+  _description: Gain bonus {@power.bonus}.
+  _sprite: {fileID: 0}
+  _passiveModifiers:
+  - _operation: 0
+    _arg: 15
+    _target:
+      _value: energy_cost
+    _flagFilter: 0
