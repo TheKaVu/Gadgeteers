@@ -1,5 +1,8 @@
 # Gadgeteers
 
+## Polite request for visitors
+This repo is a code showcase - as a developer I ask to not put cloned code into commercial use as this is the game that in far future is supposed to be released.
+
 ## The Idea
 A MOBA game where two teams fight each other trying to conduct a cyberattack on enemy's base. During a match players build _gadgets_ accordingly to their needs to defeat enemy team.
 Each gadget has unique abilities and stats and can be augmented in different ways. Each player has a set of stats that impact the game and can be adjusted by user themselves.
