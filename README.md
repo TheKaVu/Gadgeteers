@@ -1,5 +1,5 @@
 # Gadgeteers
-![banner](https://github.com/user-attachments/assets/ed01b5c7-8269-40ee-9b5f-05e4a19d1d1c)
+![banner](https://github.com/TheKaVu/Gadgeteers/blob/main/banner.png)
 ## Polite request for visitors
 This repo is a code showcase - as the owner of this code I ask to not put cloned code or fragments of code into commercial use as this is the game that in far future is supposed to be released.
 
